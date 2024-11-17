@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  background: url('./asset/backgroundImage.jpg') no-repeat center center/cover; /* Set your background image */
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.weather-app {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Blur effect for glassmorphism */
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+  width: 300px;
+  max-width: 100%; /* Ensure responsiveness */
+}
+
+.weather-app h1 {
+  color: darkblue; /* Change to your preferred color */
+  font-size: 36px; /* Optional: Adjust font size if needed */
+  margin-bottom: 20px; /* Optional: Adjust spacing */
+}
+
+.search {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#city {
+  padding: 10px;
+  width: 80%; /* Adjust width to your preference */
+  border: 2px solid darkblue; /* Border color */
+  border-radius: 5px; /* Rounded corners */
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+  color: darkblue; /* Text color */
+  font-size: 16px; /* Font size */
+  outline: none; /* Remove default outline */
+  transition: all 0.3s ease; /* Smooth transition for focus effect */
+}
+
+#city::placeholder {
+  color:darkblue; /* Placeholder color */
+}
+
+#city:focus {
+  border-color: darkblue; /* Change border color when input is focused */
+  background-color: rgba(255, 255, 255, 0.5); /* Lighter background on focus */
+}
+
+
+#searchBtn {
+  padding: 10px;
+  border: none;
+  background: darkblue;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#searchBtn i {
+  font-size: 16px;
+}
+
+.weather-info {
+  margin-top: 20px;
+}
+
+#weatherIcon {
+  font-size: 50px;
+  margin-top: 10px;
+}
